@@ -168,9 +168,8 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Our Office</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-1"></i>PT TRIPUTRA KARYA LESTARI </p>
-                    <p>Komplek Setrasari Mall Blok B-4 No.98, Kel Sukagalih, Kec. Sukajadi, Kota Bandung,
-                        Jawa Barat 40163</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0811 235 605</p>
+                    <p>Jl. Gempol Sari No 9 Melong, Kec. Cimahi Selatan, Kota Cimahi, Jawa Barat 40215</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 822 1401 8470</p>
                     {{-- <p class="mb-2"><i class="fa fa-clock me-3"></i>{{ date('H:i') }}
                         (UTC +07:00)</p> --}}
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@pramatoserba.co.id</p>

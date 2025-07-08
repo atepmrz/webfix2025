@@ -32,6 +32,9 @@
                     <a class="btn btn-link text-dark" href="https://www.instagram.com/pramafresh.id/" target="_blank"><i
                             class="fab fa-instagram" title="Prama Fresh"></i></a>
 
+                    <a class="btn btn-link text-dark" href="https://www.instagram.com/tikmatoserba.id/"
+                        target="_blank"><i class="fab fa-instagram" title="Tikma"></i></a>
+
                     <a class="btn btn-link text-dark" href="https://www.youtube.com/@pramabormacjtv6745"
                         target="_blank"><i class="fab fa-youtube" title="Youtube Prama Borma"></i></a>
                     {{-- <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a> --}}
@@ -181,6 +184,9 @@
                         <a class="btn btn-square btn-primary rounded-circle me-2"
                             href="https://www.instagram.com/pramafresh.id/" target="_blank"><i class="fab fa-instagram"
                                 title="Prama Fresh"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2"
+                            href="https://www.instagram.com/tikmatoserba.id/" target="_blank"><i
+                                class="fab fa-instagram" title="Tikma"></i></a>
                         <a class="btn btn-square btn-primary rounded-circle me-2"
                             href="https://www.youtube.com/@pramabormacjtv6745" target="_blank"><i class="fab fa-youtube"
                                 title="Youtube"></i></a>

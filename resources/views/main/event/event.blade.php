@@ -2,7 +2,7 @@
 
 @section('konten')
 <div class="container">
-    <h1 class="text-center my-5">🎉 Event & Berita Terbaru dari Prama Borma</h1>
+    <h1 class="text-center my-5">Event & Berita Terbaru dari Prama Borma</h1>
     <div class="row">
 
         <!-- News: Donor-Darah -->

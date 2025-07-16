@@ -111,7 +111,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-offset-6">
-                <a href="{{ url('/pdf/mailerFresh.pdf') }}" class="btn btn-danger text-center"
+                <a href="{{ url('/pdf/mailerFresh2.pdf') }}" class="btn btn-danger text-center"
                     style="border-radius: 5px"><i class="fa fa-download"></i>
                     Download Katalog Prama Fresh
                 </a>

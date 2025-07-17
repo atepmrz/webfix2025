@@ -75,7 +75,7 @@
 
                         <a href="{{ url('/katalog-pramaborma') }}"
                             class="dropdown-item {{ Request::is('kat-pramaborma') ? 'active' : '' }}">Katalog Prama
-                            Borma</a>
+                            Borma 2</a>
                         <a href="{{ url('/katalog-pramafresh') }}"
                             class="dropdown-item {{ Request::is('kat-pramafresh') ? 'active' : '' }}">Katalog Prama
                             Fresh</a>

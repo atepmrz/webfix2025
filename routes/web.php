@@ -35,8 +35,8 @@ Route::get('/kue-sirup', function () {
 });
 
 
-Route::get('/kat-pramaborma',[PromoController::class, 'showMailerBorma']);
-Route::get('/kat-pramafresh',[PromoController::class, 'showMailerFresh']);
+Route::get('/katalog-pramaborma',[PromoController::class, 'showMailerBorma']);
+Route::get('/katalog-pramafresh',[PromoController::class, 'showMailerFresh']);
 
 // Route::get('/carnival', function () {
 //     return view('main.promosi.proCarnival');

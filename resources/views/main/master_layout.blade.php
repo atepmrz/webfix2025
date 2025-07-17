@@ -73,10 +73,10 @@
                         {{-- <a href="{{ url('/borongHabis') }}" class="dropdown-item">Borong Habis</a> --}}
                         {{-- <a href="{{ url('/promo-nugget') }}" class="dropdown-item">Promo Nugget Vaganza</a> --}}
 
-                        <a href="{{ url('/kat-pramaborma') }}"
+                        <a href="{{ url('/katalog-pramaborma') }}"
                             class="dropdown-item {{ Request::is('kat-pramaborma') ? 'active' : '' }}">Katalog Prama
                             Borma</a>
-                        <a href="{{ url('/kat-pramafresh') }}"
+                        <a href="{{ url('/katalog-pramafresh') }}"
                             class="dropdown-item {{ Request::is('kat-pramafresh') ? 'active' : '' }}">Katalog Prama
                             Fresh</a>
                         <a href="{{ url('/promo-jsm') }}"

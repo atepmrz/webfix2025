@@ -25,8 +25,60 @@ $cabang = [
     .team-item {
         will-change: transform, opacity;
     }
-</style>
 
+    .location-image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .location-image {
+        height: 300px;
+    }
+
+    @media (max-width: 767px) {
+        .location-image {
+            aspect-ratio: 1/1;
+            height: auto;
+        }
+
+        .btn-square {
+            width: 45px !important;
+            height: 45px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .d-flex {
+            align-items: stretch;
+        }
+
+
+        .btn-square i {
+            font-size: 1rem !important;
+        }
+
+        .team-info-container {
+            flex-grow: 1;
+            height: 45px !important;
+            padding: 5px;
+            font-size: 0.7rem !important;
+        }
+
+        .team-info-container h5 {
+            font-size: 0.65rem !important;
+            margin-bottom: 0 !important;
+            line-height: 1.2 !important;
+        }
+
+        .team-info-container .team-social h3,
+        .team-info-container .team-social h4 {
+            font-size: 0.6rem !important;
+            margin: 0 !important;
+        }
+    }
+</style>
 <section id="layar" class="container-fluid">
     <br>
     <div class="container-xxl py-3">
@@ -37,21 +89,20 @@ $cabang = [
         <div class="row g-4">
             @foreach ($cabang as $i => $c)
             @php
-            $delay = number_format(0.1 + ($i * 0.1), 1);
+            $delay = number_format(0.1 + $i * 0.1, 1);
             @endphp
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="{{ $delay }}s">
+            <div class="col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-delay="{{ $delay }}s">
                 <div class="team-item rounded overflow-hidden shadow-sm">
-                    <img class="img-fluid mb-2" src="{{ asset('img/lokasi/' . $c['gambar']) }}"
-                        alt="Lokasi {{ $c['nama'] }}" loading="lazy"
-                        style="height: 300px; width: 100%; object-fit: cover; border-radius: 10px;" />
-
+                    <img class="img-fluid mb-2 location-image" src="{{ asset('img/lokasi/' . $c['gambar']) }}"
+                        alt="Lokasi {{ $c['nama'] }}" loading="lazy" />
                     <div class="d-flex">
                         <div class="flex-shrink-0 btn-square bg-primary d-flex align-items-center justify-content-center"
                             style="width: 90px; height: 90px; border-radius: 10px 0 0 10px;">
                             <i class="fa fa-2x fa-share text-white"></i>
                         </div>
 
-                        <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                        <!-- Ubah bagian ini: -->
+                        <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4 team-info-container"
                             style="height: 90px; border-radius: 0 10px 10px 0;">
                             @if ($c['wa'])
                             <a href="#" onclick="redirectToWhatsApp('{{ $c['wa'] }}', '{{ $pesanWA }}'); return false;"
@@ -86,9 +137,9 @@ $cabang = [
 
     function redirectToWhatsApp(nomor, pesan) {
         const isMobile = /iPhone|Android|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
-        const url = isMobile
-            ? `https://wa.me/${nomor}?text=${pesan}`
-            : `https://web.whatsapp.com/send?phone=${nomor}&text=${pesan}`;
+        const url = isMobile ?
+            `https://wa.me/${nomor}?text=${pesan}` :
+            `https://web.whatsapp.com/send?phone=${nomor}&text=${pesan}`;
 
         window.open(url, '_blank');
     }

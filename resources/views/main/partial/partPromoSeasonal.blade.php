@@ -16,7 +16,7 @@
                                 <hr class="w-25">
                             </div>
                         </div>
-                        <a class="btn btn-light" href="{{ url('/event') }}">Mewarnai</a>
+                        <a class="btn btn-light" href="{{ url('/event/mewarnai') }}">Mewarnai</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
@@ -48,7 +48,7 @@
                                 <hr class="w-25">
                             </div>
                         </div>
-                        <a class="btn btn-light" href="{{ url('/pbb') }}">Promo PBB</a>
+                        <a class="btn btn-light" href="{{ url('/event/pbb') }}">Promo PBB</a>
                     </div>
                 </div>
             </div>

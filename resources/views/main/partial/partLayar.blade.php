@@ -21,6 +21,7 @@ $cabang = [
 @endphp
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
     .team-item {
         will-change: transform, opacity;

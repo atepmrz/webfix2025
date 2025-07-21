@@ -161,8 +161,8 @@
 </div>
 <!-- About End -->
 
-{{-- @include('main.partial.partPromosi') --}}
-@livewire('PromoItemBulanan')
+@include('main.partial.partPromosi')
+{{-- @livewire('PromoItemBulanan') --}}
 {{-- @include('main.partial.partBestDeal') --}}
 @include('main.partial.partPromoSeasonal')
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\MpanelController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PromoController;
@@ -125,6 +126,10 @@ Route::get('/csr', function () {
 Route::get('/karir', function () {
     return view('main.tentang.karir');
 });
+
+// Mpanel Message //
+Route::post('/messages', [MessageController::class, 'store'])->name('send.message');
+Route::get('/message', [MessageController::class, 'index'])->name('messages.index');
 
 Route::get('/mpanel', [MpanelController::class, 'index']);
 Route::post('/homePanel', [MpanelController::class, 'login']);

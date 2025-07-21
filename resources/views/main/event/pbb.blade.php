@@ -1,22 +1,23 @@
 @extends('main.master_layout')
 
 @section('konten')
+
 <!-- untuk menghilangkan spinner -->
 <script>
-    window.addEventListener("load", function () {
-        const spinner = document.getElementById('spinner');
-        if (spinner) {
-            spinner.classList.remove('show');
-        }
-    });
+    window.addEventListener("load", function() {
+            const spinner = document.getElementById('spinner');
+            if (spinner) {
+                spinner.classList.remove('show');
+            }
+        });
 
-    function openModal(imgSrc, imgAlt) {
-        const modalImg = document.getElementById('modalImage');
-        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-        modalImg.src = imgSrc;
-        modalImg.alt = imgAlt;
-        modal.show();
-    }
+        function openModal(imgSrc, imgAlt) {
+            const modalImg = document.getElementById('modalImage');
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            modalImg.src = imgSrc;
+            modalImg.alt = imgAlt;
+            modal.show();
+        }
 </script>
 
 <!-- Owl Carousel CSS -->
@@ -70,7 +71,7 @@
     }
 
     .owl-carousel .item img {
-        max-height: 580px;
+        max-height: 525px;
         transition: transform 0.3s ease;
     }
 
@@ -105,6 +106,28 @@
         padding-right: 0.5rem;
     }
 
+    /* gambar pengudian */
+    .additional-images {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .additional-image {
+        height: 390px;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        background-color: #f8f9fa;
+    }
+
+    .additional-image:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
 
     @media (max-width: 991.98px) {
         .sidebar-sticky {
@@ -120,6 +143,16 @@
             height: 100px;
             object-fit: cover;
             object-position: center top;
+        }
+
+        .additional-image {
+            height: 3600px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .additional-image {
+            height: 260px;
         }
     }
 </style>
@@ -251,11 +284,12 @@
     </div>
 
     <!-- Carousel Gambar -->
-    <div class="owl-carousel-wrapper container-fluid position-relative my-5">
+    <div class="owl-carousel-wrapper container-fluid position-relative mb-5">
         <div class="owl-carousel owl-theme">
             @for ($i = 1; $i <= 16; $i++) <div class="item p-2">
                 <img src="{{ asset('img/event&news/pbb/pbb' . $i . '.jpg') }}" class="img-fluid rounded shadow"
-                    alt="PBB Gambar {{ $i }}" style="cursor: pointer;">
+                    alt="PBB Gambar {{ $i }}" style="cursor: pointer;"
+                    onclick="openModal('{{ asset('img/event&news/pbb/pbb' . $i . '.jpg') }}', 'PBB Gambar {{ $i }}')">
         </div>
         @endfor
     </div>
@@ -266,17 +300,90 @@
             <h1 class="bi bi-arrow-right-circle-fill text-primary"></h1>
         </button>
 </div>
+
+<!-- Gambar Pengudian -->
+<div class="container additional-images">
+    <h3 class="text-center mb-4">🎉 Pengudian Prama Borma Berhadiah 2025 🎉</h3>
+    <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+            <img src="{{ asset('img/event&news/pbb/ppbb1.jpeg') }}" alt="Dokumentasi Event 1" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/ppbb1.jpeg') }}', 'Dokumentasi Event 1')">
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <img src="{{ asset('img/event&news/pbb/ppbb2.jpeg') }}" alt="Dokumentasi Event 2" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/ppbb2.jpeg') }}', 'Dokumentasi Event 2')">
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <img src="{{ asset('img/event&news/pbb/ppbb3.jpeg') }}" alt="Dokumentasi Event 3" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/ppbb3.jpeg') }}', 'Dokumentasi Event 3')">
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <img src="{{ asset('img/event&news/pbb/ppbb4.jpeg') }}" alt="Dokumentasi Event 4" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/ppbb4.jpeg') }}', 'Dokumentasi Event 4')">
+        </div>
+    </div>
+
+    <!-- Informasi Pengundian -->
+    <div class="mt-5 pt-4 border-top">
+        <div class="mb-5 pe-lg-4">
+            <p class="fs-5">
+                <strong>PENGUNDIAN PRAMA BORMA BERHADIAH ✨</strong>
+            </p>
+
+            <p class="fs-5">
+                <strong>JANGAN SAMPAI KETINGGALAN !!!</strong>
+            </p>
+
+            <p>
+                Acara Pengundian PBB - Prama Borma Berhadiah 2025 yang akan dilaksanakan :
+            </p>
+            <ul>
+                <li>📅 Sabtu, 19 Juli 2025</li>
+                <li>🕘 09.00 WIB - Selesai</li>
+                <li>📍 Prama Banjaran</li>
+            </ul>
+
+            <p>
+                Acara ini disiarkan secara langsung di :
+            </p>
+            <ul>
+                <li>Youtube : pramaborma cjtv</li>
+                <li>IG : pramaborma_cj & pramafresh.id</li>
+            </ul>
+
+            <p>
+                Akan ada berbagai acara menarik selama Pengundian, diantaranya :
+            </p>
+            <ul>
+                <li>🔥 Senam Bu-Ria</li>
+                <li>🔥 Jaipong</li>
+                <li>🔥 Lomba Makan Boncabe</li>
+                <li>🔥 Milktruck Greenfields</li>
+                <li>🔥 Live Music</li>
+                <li>🔥 Free Sampling produk sponsor</li>
+                <li>🔥 Diskon produk sampai 20%</li>
+                <li>🔥 Demo Masak</li>
+            </ul>
+
+            <p class="fs-5">
+                <strong>‼️ PENGUNDIAN INI AKAN DILANGSUNG SECARA TERBUKA DAN DISAKSIKAN OLEH NOTARIS, DINSOS, DAN
+                    KEPOLISIAN SETEMPAT SERTA PEJABAT BERWENANG DI PRAMA BANJARAN ‼️</strong>
+            </p>
+        </div>
+    </div>
 </div>
+</div>
+
 
 <!-- Modal Zoom Gambar -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-transparent border-0">
             <div class="modal-body p-0 position-relative">
                 <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                    data-bs-dismiss="modal" aria-label="Close"></button>
+                    data-bs-dismiss="modal" aria-label="Close" style="z-index: 1100;"></button>
                 <img id="modalImage" src="" alt="" class="img-fluid rounded"
-                    style="width: 100%; max-height: 380px; object-fit: contain;">
+                    style="width: 100%; max-height: 95vh; object-fit: contain;">
             </div>
         </div>
     </div>
@@ -286,28 +393,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
-    $(document).ready(function(){
-        const owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop:true,
-            margin:10,
-            nav:false,
-            dots:false,
-            autoplay:true,
-            autoplayTimeout:3000,
-            responsive:{
-                0:{ items:1 },
-                600:{ items:2 },
-                1000:{ items:3 }
-            }
-        });
+    $(document).ready(function() {
+            const owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
 
-        $('#customPrev').click(function() {
-            owl.trigger('prev.owl.carousel');
+            $('#customPrev').click(function() {
+                owl.trigger('prev.owl.carousel');
+            });
+            $('#customNext').click(function() {
+                owl.trigger('next.owl.carousel');
+            });
         });
-        $('#customNext').click(function() {
-            owl.trigger('next.owl.carousel');
-        });
-    });
 </script>
 @endsection

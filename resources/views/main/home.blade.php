@@ -162,7 +162,7 @@
 <!-- About End -->
 
 {{-- @include('main.partial.partPromosi') --}}
-@livewire('PromoItemBulanan');
+@livewire('PromoItemBulanan')
 {{-- @include('main.partial.partBestDeal') --}}
 @include('main.partial.partPromoSeasonal')
 
@@ -339,7 +339,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('img/iklan/utama.jpg') }}" alt="Iklan" class="img-fluid rounded" />
+                    <img src="{{ asset('img/iklan/utama.jpeg') }}" alt="Iklan" class="img-fluid rounded" />
                 </a>
 
                 {{-- <video class="img-fluid rounded" width="100%" height="500px" controls>

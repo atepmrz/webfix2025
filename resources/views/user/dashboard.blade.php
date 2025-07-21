@@ -136,7 +136,7 @@
                         <li class="menu-item">
                             <a href="javascript:void(0)" class="menu-link">
                                 <i class="menu-icon tf-icons mdi mdi-email-outline"></i>
-                                <div data-i18n="Email">Email</div>
+                                <div data-i18n="Email">Message</div>
                             </a>
                         </li>
                         <!-- Pages -->
@@ -224,7 +224,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="flex-grow-1">
-                                                        <h6 class="mb-0">Irsan</h6>
+                                                        <h6 class="mb-0">Justin Timberlake</h6>
                                                         <small class="text-muted">Admin</small>
                                                     </div>
                                                 </div>
@@ -284,9 +284,9 @@
                                 <div class="col-md-12 col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="card-title mb-1">Congratulations Irsan! 🎉</h4>
+                                            <h4 class="card-title mb-1">Congratulations</h4>
                                             <p class="pb-0">Best seller of the month</p>
-                                            <h4 class="text-primary mb-1">$42.8k</h4>
+                                            <h4 class="text-primary mb-1">Rp. 42.8M</h4>
                                             <p class="mb-2 pb-1">78% of target 🚀</p>
                                             <a href="javascript:;" class="btn btn-sm btn-primary">View Sales</a>
                                         </div>
@@ -307,9 +307,7 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <h5 class="card-title m-0 me-2">Ini Cuma Contoh Doank pak Irsan, bukan
-                                                    data
-                                                    asli</h5>
+                                                <h5 class="card-title m-0 me-2">Laporan Transaksi Layar</h5>
                                                 <div class="dropdown">
                                                     <button class="btn p-0" type="button" id="transactionID"
                                                         data-bs-toggle="dropdown" aria-haspopup="true"
@@ -340,7 +338,7 @@
                                                         </div>
                                                         <div class="ms-3">
                                                             <div class="small mb-1">Sales</div>
-                                                            <h5 class="mb-0">245k</h5>
+                                                            <h5 class="mb-0">245M</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -353,7 +351,7 @@
                                                         </div>
                                                         <div class="ms-3">
                                                             <div class="small mb-1">Customers</div>
-                                                            <h5 class="mb-0">12.5k</h5>
+                                                            <h5 class="mb-0">12.5M</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -366,7 +364,7 @@
                                                         </div>
                                                         <div class="ms-3">
                                                             <div class="small mb-1">Product</div>
-                                                            <h5 class="mb-0">1.54k</h5>
+                                                            <h5 class="mb-0">1.54M</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -379,7 +377,7 @@
                                                         </div>
                                                         <div class="ms-3">
                                                             <div class="small mb-1">Revenue</div>
-                                                            <h5 class="mb-0">$88k</h5>
+                                                            <h5 class="mb-0">Rp. 88M</h5>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -389,8 +387,247 @@
                                 </div>
                                 <!--/ Transactions -->
 
+                                <!-- Data Tables -->
+                                {{-- <div class="col-12">
+                                    <div class="card">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th class="text-truncate">User</th>
+                                                        <th class="text-truncate">Email</th>
+                                                        <th class="text-truncate">Role</th>
+                                                        <th class="text-truncate">Target Sales</th>
+                                                        <th class="text-truncate">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/1.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Irsan Kurniawan</h6>
+                                                                    <small class="text-truncate">@irsan86</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">Irsan@pramatoserba.co.id</td>
+                                                        <td class="text-truncate">
+                                                            <i class="mdi mdi-laptop mdi-24px text-danger me-1"></i>
+                                                            Marketing
+                                                        </td>
+                                                        <td class="text-truncate">34500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-success rounded-pill">Active</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/2.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Paulin</h6>
+                                                                    <small class="text-truncate">@Paulin</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">Paulin@pramatoserba.co.id</td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-pencil-outline text-info mdi-24px me-1"></i>
+                                                            Marketing
+                                                        </td>
+                                                        <td class="text-truncate">64500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-success rounded-pill">Active</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/3.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Ramon Timberlake
+                                                                    </h6>
+                                                                    <small class="text-truncate">@ramon</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">ramon@pramatoserba.co.id</td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-cog-outline text-warning mdi-24px me-1"></i>
+                                                            Developer
+                                                        </td>
+                                                        <td class="text-truncate">94500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-success rounded-pill">Active</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/5.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Tabah</h6>
+                                                                    <small class="text-truncate">@tabah</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">tabah@pramatoserba.co.id</td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-pencil-outline text-info mdi-24px me-1"></i>
+                                                            Marketing
+                                                        </td>
+                                                        <td class="text-truncate">4500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-warning rounded-pill">Pending</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/4.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Lia</h6>
+                                                                    <small class="text-truncate">@liafresh</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">lia@pramatoserba.co.id</td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-chart-donut mdi-24px text-success me-1"></i>
+                                                            MD Fresh
+                                                        </td>
+                                                        <td class="text-truncate">10500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-success rounded-pill">Active</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/7.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Irwan</h6>
+                                                                    <small class="text-truncate">@irwansyah</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">irwan@pramatoserba.co.id
+                                                        </td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-pencil-outline text-info mdi-24px me-1"></i>
+                                                            Marketing
+                                                        </td>
+                                                        <td class="text-truncate">99500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-warning rounded-pill">Pending</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/6.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Indofood</h6>
+                                                                    <small class="text-truncate">@indofood</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">indofood@gmail.com</td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-account-outline mdi-24px text-primary me-1"></i>
+                                                            Supplier
+                                                        </td>
+                                                        <td class="text-truncate">23500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-success rounded-pill">Active</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-transparent">
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="avatar avatar-sm me-3">
+                                                                    <img src="{{ asset('assets/img/avatars/1.png') }}"
+                                                                        alt="Avatar" class="rounded-circle" />
+                                                                </div>
+                                                                <div>
+                                                                    <h6 class="mb-0 text-truncate">Kapal Api Group</h6>
+                                                                    <small class="text-truncate">@kapalapi</small>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-truncate">kapalapigroup@hotmail.com</td>
+                                                        <td class="text-truncate">
+                                                            <i
+                                                                class="mdi mdi-account-outline mdi-24px text-primary me-1"></i>
+                                                            Supplier
+                                                        </td>
+                                                        <td class="text-truncate">20500$</td>
+                                                        <td><span
+                                                                class="badge bg-label-secondary rounded-pill">Inactive</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div> --}}
+
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th class="text-truncate">No</th>
+                                                        <th class="text-truncate">Name</th>
+                                                        <th class="text-truncate">Email</th>
+                                                        <th class="text-truncate">Subject</th>
+                                                        <th class="text-truncate">Message</th>
+                                                        <th class="text-truncate">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Data Tables -->
+
                                 <!-- Weekly Overview Chart -->
-                                <div class="col-xl-4 col-md-6">
+                                {{-- <div class="col-xl-4 col-md-6">
                                     <div class="card">
                                         <div class="card-header">
                                             <div class="d-flex justify-content-between">
@@ -426,11 +663,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!--/ Weekly Overview Chart -->
 
                                 <!-- Total Earnings -->
-                                <div class="col-xl-4 col-md-6">
+                                {{-- <div class="col-xl-4 col-md-6">
                                     <div class="card">
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                             <h5 class="card-title m-0 me-2">Total Earning</h5>
@@ -531,11 +768,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!--/ Total Earnings -->
 
                                 <!-- Four Cards -->
-                                <div class="col-xl-4 col-md-6">
+                                {{-- <div class="col-xl-4 col-md-6">
                                     <div class="row gy-4">
                                         <!-- Total Profit line chart -->
                                         <div class="col-sm-6">
@@ -641,11 +878,11 @@
                                         </div>
                                         <!--/ Sessions chart -->
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!--/ Total Earning -->
 
                                 <!-- Sales by Countries -->
-                                <div class="col-xl-4 col-md-6">
+                                {{-- <div class="col-xl-4 col-md-6">
                                     <div class="card">
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                             <h5 class="card-title m-0 me-2">Sales by Countries</h5>
@@ -771,11 +1008,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!--/ Sales by Countries -->
 
                                 <!-- Deposit / Withdraw -->
-                                <div class="col-xl-8">
+                                {{-- <div class="col-xl-8">
                                     <div class="card h-100">
                                         <div class="card-body row g-2">
                                             <div class="col-12 col-md-6 card-separator pe-0 pe-md-3">
@@ -952,223 +1189,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- Deposit / Withdraw -->
-
-                                <!-- Data Tables -->
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th class="text-truncate">User</th>
-                                                        <th class="text-truncate">Email</th>
-                                                        <th class="text-truncate">Role</th>
-                                                        <th class="text-truncate">Target Sales</th>
-                                                        <th class="text-truncate">Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/1.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Irsan Kurniawan</h6>
-                                                                    <small class="text-truncate">@irsan86</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">Irsan@pramatoserba.co.id</td>
-                                                        <td class="text-truncate">
-                                                            <i class="mdi mdi-laptop mdi-24px text-danger me-1"></i>
-                                                            Marketing
-                                                        </td>
-                                                        <td class="text-truncate">34500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-success rounded-pill">Active</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/2.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Rizka</h6>
-                                                                    <small class="text-truncate">@rizka</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">rizka@pramatoserba.co.id</td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-pencil-outline text-info mdi-24px me-1"></i>
-                                                            Marketing
-                                                        </td>
-                                                        <td class="text-truncate">64500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-success rounded-pill">Active</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/3.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Ramon Timberlake
-                                                                    </h6>
-                                                                    <small class="text-truncate">@ramon</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">ramon@pramatoserba.co.id</td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-cog-outline text-warning mdi-24px me-1"></i>
-                                                            Developer
-                                                        </td>
-                                                        <td class="text-truncate">94500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-success rounded-pill">Active</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/5.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Tabah</h6>
-                                                                    <small class="text-truncate">@tabah</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">tabah@pramatoserba.co.id</td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-pencil-outline text-info mdi-24px me-1"></i>
-                                                            Marketing
-                                                        </td>
-                                                        <td class="text-truncate">4500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-warning rounded-pill">Pending</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/4.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Lia</h6>
-                                                                    <small class="text-truncate">@liafresh</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">lia@pramatoserba.co.id</td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-chart-donut mdi-24px text-success me-1"></i>
-                                                            MD Fresh
-                                                        </td>
-                                                        <td class="text-truncate">10500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-success rounded-pill">Active</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/7.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Irwan</h6>
-                                                                    <small class="text-truncate">@irwansyah</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">irwan@pramatoserba.co.id
-                                                        </td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-pencil-outline text-info mdi-24px me-1"></i>
-                                                            Marketing
-                                                        </td>
-                                                        <td class="text-truncate">99500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-warning rounded-pill">Pending</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/6.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Indofood</h6>
-                                                                    <small class="text-truncate">@indofood</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">indofood@gmail.com</td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-account-outline mdi-24px text-primary me-1"></i>
-                                                            Supplier
-                                                        </td>
-                                                        <td class="text-truncate">23500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-success rounded-pill">Active</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="border-transparent">
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="avatar avatar-sm me-3">
-                                                                    <img src="{{ asset('assets/img/avatars/1.png') }}"
-                                                                        alt="Avatar" class="rounded-circle" />
-                                                                </div>
-                                                                <div>
-                                                                    <h6 class="mb-0 text-truncate">Kapal Api Group</h6>
-                                                                    <small class="text-truncate">@kapalapi</small>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-truncate">kapalapigroup@hotmail.com</td>
-                                                        <td class="text-truncate">
-                                                            <i
-                                                                class="mdi mdi-account-outline mdi-24px text-primary me-1"></i>
-                                                            Supplier
-                                                        </td>
-                                                        <td class="text-truncate">20500$</td>
-                                                        <td><span
-                                                                class="badge bg-label-secondary rounded-pill">Inactive</span>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/ Data Tables -->
                             </div>
                         </div>
                         <!-- / Content -->
@@ -1183,7 +1205,7 @@
                                         <script>
                                             document.write(new Date().getFullYear());
                                         </script>
-                                        , made with <span class="text-danger"><i
+                                        made with <span class="text-danger"><i
                                                 class="tf-icons mdi mdi-heart"></i></span> by
                                         <a href="" class="footer-link fw-medium">PramaSoftDev</a>
                                     </div>

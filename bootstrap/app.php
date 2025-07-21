@@ -11,17 +11,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        // $middleware->append([
-        //     \App\Http\Middleware\NoCacheMiddleware::class,
-        // ]);
-
-        // $middleware->group('web', [
-        //     \App\Http\Middleware\NoCacheMiddleware::class,
-        // ]);
-
-        // // $middleware->alias([
-        // //     'no.cache' => \App\Http\Middleware\NoCacheMiddleware::class,
-        // // ]);
+        $middleware->alias([
+            'guest' => \Illuminate\Auth\Middleware\RedirectIfAuthenticated::class,
+            'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

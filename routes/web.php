@@ -1,15 +1,30 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\MpanelController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PromoController;
+use App\Http\Controllers\SesiController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [PromoController::class, 'showPromoHome']);
+//todo Mpanel
+Route::middleware(['guest'])->group(function () {
+    Route::get('/login', [SesiController::class, 'index'])->name('login');
+    Route::post('/proses-login', [SesiController::class, 'proses_login'])->name('proses_login');
+    Route::get('/signup', [SesiController::class, 'signup']);
+});
 
-//
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [AdminController::class, 'index'])->name('home');
+    Route::get('/logout', [SesiController::class, 'logout']);
+    Route::get('/message', [MessageController::class, 'index'])->name('messages.index');
+});
+
+
+//todo Landing Page
+Route::get('/', [PromoController::class, 'showPromoHome']);
 Route::get('/gebyar-lebaran', function () {
     return view('main.promosi.promosi_seasonal.promoGebyarLebaran');
 });
@@ -22,27 +37,17 @@ Route::get('/promo-double', function () {
 Route::get('/promo-hampers', function () {
     return view('main.promosi.promosi_seasonal.promoHampers');
 });
-
 Route::get('/lns', function () {
     return view('main.promosi.promosi_seasonal.promoLns');
 });
-
 Route::get('/mudik-seru', function () {
     return view('main.promosi.promosi_seasonal.promoMudik');
 });
-
 Route::get('/kue-sirup', function () {
     return view('main.promosi.promosi_seasonal.promoKueSirup');
 });
-
-
 Route::get('/katalog-pramaborma',[PromoController::class, 'showMailerBorma']);
 Route::get('/katalog-pramafresh',[PromoController::class, 'showMailerFresh']);
-
-// Route::get('/carnival', function () {
-//     return view('main.promosi.proCarnival');
-// });
-
 Route::get('/promo-carnival', [PromoController::class, 'showPromoCarnival']);
 Route::get('/promo-jsm', [PromoController::class, 'showPromoJSM']);
 Route::get('/promo-fashion', function () {
@@ -59,32 +64,24 @@ Route::get('/promo-gajian', [PromoController::class, 'showPromoGajian']);
 Route::get('/promo-pintar', function () {
     return view('main.promosi.proPintar');
 });
-
-
 Route::get('/promo-selaras', function () {
     return view('main.promosi.proSelaras');
 });
-
 Route::get('/promo-givemefive', function () {
     return view('main.promosi.proGiveMeFive');
 });
-
 Route::get('/layar', function () {
     return view('main.layanan.layar');
 });
-
 Route::get('/customerCare', function () {
     return view('main.layanan.cusCare');
 });
-
 Route::get('/voucher', function () {
     return view('main.layanan.voucher');
 });
-
 Route::get('/lokasi', function () {
     return view('main.layanan.lokasi');
 });
-
 // ini route yang baru //
 Route::get('/event', [EventController::class, 'index'])->name('event.index');
 
@@ -94,7 +91,6 @@ Route::get('/event/mewarnai', [EventController::class, 'mewarnai'])->name('event
 Route::get('/event/pbb', [EventController::class, 'pbb'])->name('event.pbb');
 Route::get('/event/sasha', [EventController::class, 'sasha'])->name('event.sasha');
 // Route::get('/event/saporo', [EventController::class, 'saporo'])->name('event.saporo');
-
 //ini route News//
 Route::get('/news/donor', [NewsController::class, 'donor'])->name('news.donor');
 
@@ -126,16 +122,7 @@ Route::get('/csr', function () {
 Route::get('/karir', function () {
     return view('main.tentang.karir');
 });
-
-// Mpanel Message //
 Route::post('/messages', [MessageController::class, 'store'])->name('send.message');
-Route::get('/message', [MessageController::class, 'index'])->name('messages.index');
-
-Route::get('/mpanel', [MpanelController::class, 'index']);
-Route::post('/homePanel', [MpanelController::class, 'login']);
-
-
-
 
 
 //! /////////////////////  //////////////////////////////////////////////////////////  //////////////////////////////////////

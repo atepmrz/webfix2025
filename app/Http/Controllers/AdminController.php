@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Message;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function index(){
-        return view('user.dashboard');
+        $dataMsg = Message::orderBy('created_at', 'desc')->get();
+        return view('user.dashboard', compact('dataMsg'));
     }
 }

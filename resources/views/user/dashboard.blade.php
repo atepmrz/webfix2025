@@ -616,9 +616,16 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-
-                                                    </tr>
+                                                    @foreach ($dataMsg as $item)
+                                                        <tr>
+                                                            <td>{{ $loop->iteration }}</td>
+                                                            <td>{{ $item->name }}</td>
+                                                            <td>{{ $item->email }}</td>
+                                                            <td>{{ $item->subject }}</td>
+                                                            <td>{{ $item->message }}</td>
+                                                            <td>Backlog</td>
+                                                        </tr>
+                                                    @endforeach
                                                 </tbody>
                                             </table>
                                         </div>

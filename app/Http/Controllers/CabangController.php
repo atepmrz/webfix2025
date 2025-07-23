@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class CabangController extends Controller
 {
-    public function index()
+    public static function getData()
     {
-       $cabang = [
+        return [
         ['nama' => 'Borma Gempol', 'wa' => '6282124639585', 'gambar' => 'bgp.jpg'],
         ['nama' => 'Borma Buah Batu', 'wa' => '6282123767001', 'gambar' => 'bbb.jpg'],
         ['nama' => 'Borma Cijerah', 'wa' => '6282127416745', 'gambar' => 'bcj.jpg'],
@@ -23,7 +23,5 @@ class CabangController extends Controller
         ['nama' => 'Prama Fresh Perintis', 'wa' => '6282117433790', 'gambar' => 'fps.jpg'],
         ['nama' => 'Tikma Soreang', 'wa' => null, 'gambar' => 'tikma.jpg'],
     ];
-
-    return view('main.partial.partLayar', compact('cabang'));
-}
+    }
 }

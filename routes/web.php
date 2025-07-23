@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CabangController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\MpanelController;
@@ -50,9 +51,7 @@ Route::get('/katalog-pramaborma',[PromoController::class, 'showMailerBorma']);
 Route::get('/katalog-pramafresh',[PromoController::class, 'showMailerFresh']);
 Route::get('/promo-carnival', [PromoController::class, 'showPromoCarnival']);
 Route::get('/promo-jsm', [PromoController::class, 'showPromoJSM']);
-Route::get('/promo-fashion', function () {
-    return view('main.promosi.proFashion');
-});
+Route::get('/promo-fashion', [PromoController::class, 'showPromoFashion']);
 // Ini adalah route yang sebelumnya //
 // Route::get('/promo-gajian', function () {
 //     return view('main.promosi.proGajian');
@@ -70,9 +69,16 @@ Route::get('/promo-selaras', function () {
 Route::get('/promo-givemefive', function () {
     return view('main.promosi.proGiveMeFive');
 });
+
+// Route::get('/layar', function () {
+//     return view('main.layanan.layar.layar');
+// });
+
 Route::get('/layar', function () {
-    return view('main.layanan.layar.layar');
+    $cabang = CabangController::getData();
+    return view('main.layanan.layar.layar', compact('cabang'));
 });
+
 Route::get('/customerCare', function () {
     return view('main.layanan.cusCare');
 });

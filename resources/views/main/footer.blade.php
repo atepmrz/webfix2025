@@ -24,6 +24,8 @@
             $("#myModal").modal("show");
         });
 </script>
+
+
 <!-- Matiin Klik Kanan Inspect element -->
 {{-- <script type="text/javascript">
     document.onmousedown = disableclick;

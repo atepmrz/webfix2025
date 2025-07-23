@@ -21,18 +21,23 @@ class PromoController extends Controller
             $allFiles = scandir($directory);
 
             foreach ($allFiles as $file) {
-                if ($file === '.' || $file === '..') continue;
+                if ($file === '.' || $file === '..') {
+                    continue;
+                }
 
                 $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
                 if (in_array($ext, $allowed_extensions)) {
                     $files[] = 'img/promo/borma/' . $file;
                 }
             }
+
+            natsort($files);
+            $files = array_values($files);
         }
+
         return view('main.promosi.katalogBorma', compact('files'));
     }
-
-    public function showMailerFresh()
+   public function showMailerFresh()
     {
         $files = [];
         $allowed_extensions = ['jpg', 'jpeg', 'png', 'svg'];
@@ -42,17 +47,20 @@ class PromoController extends Controller
             $allFiles = scandir($directory);
 
             foreach ($allFiles as $file) {
-                if ($file === '.' || $file === '..') continue;
+                if ($file === '.' || $file === '..') {
+                    continue;
+                }
 
                 $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
                 if (in_array($ext, $allowed_extensions)) {
                     $files[] = 'img/promo/fresh/' . $file;
                 }
             }
+             natsort($files);
+            $files = array_values($files);
         }
         return view('main.promosi.katalogFresh', compact('files'));
     }
-
     public function showPromoGajian()
     {
         $files = [];
@@ -118,6 +126,28 @@ class PromoController extends Controller
         return view('main.promosi.proJsm', compact('files'));
     }
 
+    public function showPromoFashion()
+{
+    $videos = [
+        [
+            'src' => asset('video/fashion/batik.mp4'),
+            'title' => 'Video Batik',
+            'desc' => 'Motif Nusantara',
+        ],
+        [
+            'src' => asset('video/fashion/fashion1.mp4'),
+            'title' => 'Fashion Modern',
+            'desc' => 'Gaya Masa Kini',
+        ],
+        [
+            'src' => asset('video/fashion/fashion2.mp4'),
+            'title' => 'Koleksi Elegan',
+            'desc' => 'Untuk Acara Resmi',
+        ],
+    ];
+
+    return view('main.promosi.proFashion', compact('videos'));
+}
     public function showPromoHome()
     {
         $promoList = collect([

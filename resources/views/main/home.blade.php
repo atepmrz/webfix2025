@@ -328,8 +328,15 @@
         </div>
     </div>
     <!-- Video Modal End -->
+    
+    {{-- ini partLayar --}}
+@php
+    use App\Http\Controllers\CabangController;
+    $cabang = CabangController::getData();
+@endphp
+@include('main.partial.partLayar', ['cabang' => $cabang])
 
-    @include('main.partial.partLayar')
+{{-- part lokasi --}}
     @include('main.partial.partLokasi')
 
     <!-- Modal -->

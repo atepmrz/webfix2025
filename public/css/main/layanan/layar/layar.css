@@ -1,0 +1,14 @@
+.rounded-soft-img {
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 992px) {
+        .rounded-soft-img {
+            width: 100%;
+            height: auto;
+        }
+    }

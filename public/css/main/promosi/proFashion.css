@@ -1,0 +1,30 @@
+.rounded2 {
+        border-radius: 12px;
+    }
+
+    .rounded3 {
+        border-radius: 16px;
+    }
+
+    .playlist-item:hover {
+        background-color: #f0ad4e !important;
+        color: white;
+    }
+
+    .playlist-item video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 576px) {
+        .playlist-item {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .playlist-item .ms-3 {
+            margin-left: 0 !important;
+            margin-top: 0.5rem;
+        }
+    }

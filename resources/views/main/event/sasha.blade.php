@@ -1,62 +1,7 @@
 @extends('main.master_layout')
 
 @section('konten')
-    <style>
-        .sidebar-thumb-img {
-            height: 150px;
-            width: 100%;
-            object-fit: cover;
-            object-position: center top;
-            background-color: #f8f9fa;
-            border-radius: 0.25rem;
-            transition: transform 0.3s ease;
-        }
-
-        .sidebar-thumb-img:hover {
-            transform: scale(1.05);
-        }
-
-        .sidebar-sticky {
-            position: sticky;
-            top: 20px;
-            max-height: 720px;
-            overflow-y: auto;
-            padding-right: 0.5rem;
-        }
-
-        @media (max-width: 991.98px) {
-            .sidebar-sticky {
-                position: static;
-                max-height: none;
-                overflow-y: visible;
-                padding-right: 0;
-                margin-top: 2rem;
-            }
-
-            .sidebar-thumb-img {
-                height: 100px;
-                object-fit: cover;
-                object-position: center top;
-            }
-        }
-    </style>
-
-    <script>
-        window.addEventListener("load", function() {
-            const spinner = document.getElementById('spinner');
-            if (spinner) {
-                spinner.classList.remove('show');
-            }
-        });
-
-        function openModal(imgSrc, imgAlt) {
-            const modalImg = document.getElementById('modalImage');
-            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-            modalImg.src = imgSrc;
-            modalImg.alt = imgAlt;
-            modal.show();
-        }
-    </script>
+    <link rel="stylesheet" href="{{ asset('css/main/event/sasha.css') }}" />
 
     <div class="container my-5">
         <div class="row d-flex align-items-start">
@@ -172,4 +117,5 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('js/main/event/sasha.js') }}"></script>
 @endsection

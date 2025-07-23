@@ -71,7 +71,7 @@ Route::get('/promo-givemefive', function () {
     return view('main.promosi.proGiveMeFive');
 });
 Route::get('/layar', function () {
-    return view('main.layanan.layar');
+    return view('main.layanan.layar.layar');
 });
 Route::get('/customerCare', function () {
     return view('main.layanan.cusCare');
@@ -123,6 +123,9 @@ Route::get('/karir', function () {
     return view('main.tentang.karir');
 });
 Route::post('/messages', [MessageController::class, 'store'])->name('send.message');
+
+Route::get('/select-store', [PromoController::class, 'showSelectStore'])->name('select.store');
+
 
 
 //! /////////////////////  //////////////////////////////////////////////////////////  //////////////////////////////////////

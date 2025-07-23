@@ -10,6 +10,9 @@
 </style>
 
 <body onload="tampilPromoBulan()">
+    @yield('styles')
+    @yield('scripts')
+
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center container-fluid">
@@ -67,22 +70,23 @@
                 <a href="{{ url('/') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                 <div class="nav-item dropdown">
                     <a href="#"
-                        class="nav-link dropdown-toggle {{ Request::is('promo-*') || Request::is('kat-*') ? 'active' : '' }}"
+                        class="nav-link dropdown-toggle {{ Request::is('promo-*') || Request::is('katalog-*') ? 'active' : '' }}"
                         data-bs-toggle="dropdown">Promosi</a>
                     <div class="dropdown-menu bg-light m-0">
                         {{-- <a href="{{ url('/borongHabis') }}" class="dropdown-item">Borong Habis</a> --}}
                         {{-- <a href="{{ url('/promo-nugget') }}" class="dropdown-item">Promo Nugget Vaganza</a> --}}
 
                         <a href="{{ url('/katalog-pramaborma') }}"
-                            class="dropdown-item {{ Request::is('kat-pramaborma') ? 'active' : '' }}">Katalog Prama
+                            class="dropdown-item {{ Request::is('katalog-pramaborma') ? 'active' : '' }}">Katalog Prama
                             Borma</a>
                         <a href="{{ url('/katalog-pramafresh') }}"
-                            class="dropdown-item {{ Request::is('kat-pramafresh') ? 'active' : '' }}">Katalog Prama
+                            class="dropdown-item {{ Request::is('katalog-pramafresh') ? 'active' : '' }}">Katalog Prama
                             Fresh</a>
                         <a href="{{ url('/promo-jsm') }}"
                             class="dropdown-item {{ Request::is('promo-jsm') ? 'active' : '' }}">Promo JSM</a>
                         <a href="{{ url('/promo-carnival') }}"
-                            class="dropdown-item {{ Request::is('promo-carnival') ? 'active' : '' }}">Promo Carnival</a>
+                            class="dropdown-item {{ Request::is('promo-carnival') ? 'active' : '' }}">Promo
+                            Carnival</a>
                         {{-- <a href="{{ url('/promo-double') }}" class="dropdown-item">Promo Double Date</a>
                         <a href="{{ url('/kue-sirup') }}" class="dropdown-item">Promo Kue & Sirup</a>
                         <a href="{{ url('/mudik-seru') }}" class="dropdown-item">Promo Mudik Seru</a>
@@ -178,17 +182,17 @@
                             href="https://www.facebook.com/pramafresh.id/?locale=id_ID" target="_blank"><i
                                 class="fab fa-facebook-f" title="Facebook"></i></a>
                         <a class="btn btn-square btn-primary rounded-circle me-2"
-                            href="https://www.instagram.com/pramaborma_cj/" target="_blank"><i class="fab fa-instagram"
-                                title="Prama Borma"></i></a>
+                            href="https://www.instagram.com/pramaborma_cj/" target="_blank"><i
+                                class="fab fa-instagram" title="Prama Borma"></i></a>
                         <a class="btn btn-square btn-primary rounded-circle me-2"
-                            href="https://www.instagram.com/pramafresh.id/" target="_blank"><i class="fab fa-instagram"
-                                title="Prama Fresh"></i></a>
+                            href="https://www.instagram.com/pramafresh.id/" target="_blank"><i
+                                class="fab fa-instagram" title="Prama Fresh"></i></a>
                         <a class="btn btn-square btn-primary rounded-circle me-2"
                             href="https://www.instagram.com/tikmatoserba.id/" target="_blank"><i
                                 class="fab fa-instagram" title="Tikma"></i></a>
                         <a class="btn btn-square btn-primary rounded-circle me-2"
-                            href="https://www.youtube.com/@pramabormacjtv6745" target="_blank"><i class="fab fa-youtube"
-                                title="Youtube"></i></a>
+                            href="https://www.youtube.com/@pramabormacjtv6745" target="_blank"><i
+                                class="fab fa-youtube" title="Youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -246,15 +250,15 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" style="margin-bottom: 100px"><i
-            class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+        style="margin-bottom: 100px"><i class="bi bi-arrow-up"></i></a>
     <!-- Cart -->
     <a href="{{ url('/layar') }}" class="btn btn-lg btn-warning btn-lg-square rounded-circle"
         style="position: fixed; bottom:75px; right:30px"><i class="bi bi-cart4"></i></a>
     <!-- Chat WA -->
     <a href="https://wa.me/6287814523770/?text=HI saya mau pesan Minyak goreng, apakah ready?" target="_blank"
-        class="btn btn-lg btn-success btn-lg-square rounded-circle" style="position: fixed; bottom:20px; right:30px"><i
-            class="bi bi-whatsapp"></i></a>
+        class="btn btn-lg btn-success btn-lg-square rounded-circle"
+        style="position: fixed; bottom:20px; right:30px"><i class="bi bi-whatsapp"></i></a>
 
 
     {{-- <script type="text/javascript">

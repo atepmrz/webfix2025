@@ -22,65 +22,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<style>
-    .team-item {
-        will-change: transform, opacity;
-    }
-
-    .location-image {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .location-image {
-        height: 300px;
-    }
-
-    @media (max-width: 767px) {
-        .location-image {
-            aspect-ratio: 1/1;
-            height: auto;
-        }
-
-        .btn-square {
-            width: 45px !important;
-            height: 45px !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .d-flex {
-            align-items: stretch;
-        }
-
-
-        .btn-square i {
-            font-size: 1rem !important;
-        }
-
-        .team-info-container {
-            flex-grow: 1;
-            height: 45px !important;
-            padding: 5px;
-            font-size: 0.7rem !important;
-        }
-
-        .team-info-container h5 {
-            font-size: 0.65rem !important;
-            margin-bottom: 0 !important;
-            line-height: 1.2 !important;
-        }
-
-        .team-info-container .team-social h3,
-        .team-info-container .team-social h4 {
-            font-size: 0.6rem !important;
-            margin: 0 !important;
-        }
-    }
-</style>
+<link rel="stylesheet" href="{{ asset('css/main/partial/partLayar.css') }}" />
 <section id="layar" class="container-fluid">
     <br>
     <div class="container-xxl py-3">

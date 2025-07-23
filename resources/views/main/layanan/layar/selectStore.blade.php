@@ -1,7 +1,7 @@
 @extends('main.master_layout')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/selectStore.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main/layanan/layar/selectStore.css') }}">
 @endsection
 
 @section('konten')
@@ -21,17 +21,21 @@
             </div>
 
             <div class="product-info">
-                @if(is_array($produkArray) && count($produkArray) > 1)
+                @if (is_array($produkArray) && count($produkArray) > 1)
                     <p><strong>Produk:</strong></p>
                     <ul>
-                        @foreach($produkArray as $item)
+                        @foreach ($produkArray as $item)
                             <li>{{ $item['nama'] }} - {{ $item['harga_formatted'] }}</li>
                         @endforeach
                     </ul>
-                    <p><strong>Total Harga:</strong> {{ $produkArray[0]['diskon'] ? 'Diskon 10%' : 'Rp. ' . number_format(array_sum(array_column($produkArray, 'harga')), 0, ',', '.') }}</p>
+                    <p><strong>Total Harga:</strong>
+                        {{ $produkArray[0]['diskon'] ? 'Diskon 10%' : 'Rp. ' . number_format(array_sum(array_column($produkArray, 'harga')), 0, ',', '.') }}
+                    </p>
                 @else
                     <p><strong>Produk:</strong> {{ $produkArray[0]['nama'] ?? $produk }}</p>
-                    <p><strong>Harga:</strong> {{ $produkArray[0]['harga_formatted'] ?? 'Rp. ' . number_format($harga, 0, ',', '.') . '/' . $satuan }}</p>
+                    <p><strong>Harga:</strong>
+                        {{ $produkArray[0]['harga_formatted'] ?? 'Rp. ' . number_format($harga, 0, ',', '.') . '/' . $satuan }}
+                    </p>
                 @endif
             </div>
 
@@ -42,16 +46,18 @@
 
             <div class="mb-3">
                 <label for="totalPrice" class="form-label">Total Pembayaran</label>
-                @if(is_array($produkArray) && count($produkArray) > 1)
+                @if (is_array($produkArray) && count($produkArray) > 1)
                     <input type="text" class="total-input" id="totalPrice"
-                        value="{{ $produkArray[0]['diskon'] ? 'Diskon 10%' : 'Rp. ' . number_format(array_sum(array_column($produkArray, 'harga')), 0, ',', '.') }}" readonly>
+                        value="{{ $produkArray[0]['diskon'] ? 'Diskon 10%' : 'Rp. ' . number_format(array_sum(array_column($produkArray, 'harga')), 0, ',', '.') }}"
+                        readonly>
                 @else
                     <input type="text" class="total-input" id="totalPrice"
-                        value="{{ $produkArray[0]['harga_formatted'] ?? 'Rp. ' . number_format($harga, 0, ',', '.') }}" readonly>
+                        value="{{ $produkArray[0]['harga_formatted'] ?? 'Rp. ' . number_format($harga, 0, ',', '.') }}"
+                        readonly>
                 @endif
             </div>
 
-            <<button class="wa-button" onclick="sendToWhatsApp()">
+            <button class="wa-button" onclick="sendToWhatsApp()">
                 <i class="bi bi-whatsapp"></i> Lanjutkan ke WhatsApp
             </button>
         </div>
@@ -69,7 +75,7 @@
                         onclick="selectStore('{{ $store['nama'] }}', '{{ $store['wa'] }}', '{{ $store['gambar'] }}', '{{ $store['alamat'] ?? '' }}')">
                         <img src="{{ $store['gambar'] }}" alt="{{ $store['nama'] }}" class="store-image">
                         <div class="store-name">{{ $store['nama'] }}</div>
-                        @if(isset($store['alamat']))
+                        @if (isset($store['alamat']))
                             <div class="store-address">{{ $store['alamat'] }}</div>
                         @endif
                     </div>
@@ -80,7 +86,7 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('js/selectStore.js') }}"></script>
+    <script src="{{ asset('js/main/layanan/layar/selectStore.js') }}"></script>
     <script>
         initializeStoreData(
             @json($produkArray),

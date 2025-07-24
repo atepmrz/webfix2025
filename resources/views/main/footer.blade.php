@@ -27,7 +27,7 @@
 
 
 <!-- Matiin Klik Kanan Inspect element -->
-{{-- <script type="text/javascript">
+<script type="text/javascript">
     document.onmousedown = disableclick;
     status = "Forbidden";
 
@@ -102,4 +102,4 @@
     var noCopy = true;
     var noScreenshot = true;
     var autoBlur = true;
-</script> --}}
+</script>

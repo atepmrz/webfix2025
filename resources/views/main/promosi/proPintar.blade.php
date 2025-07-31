@@ -67,9 +67,9 @@
                             <div class="carousel-item">
                                 <img src="{{ asset('img/promo/promoPinter2.jpg') }}" alt="Promo Pinter 2">
                             </div>
-                            <div class="carousel-item">
+                            {{-- <div class="carousel-item">
                                 <img src="{{ asset('img/promo/promoPinter3.jpg') }}" alt="Promo Pinter 3">
-                            </div>
+                            </div> --}}
                         </div>
 
                         <!-- Sisi Kiri -->

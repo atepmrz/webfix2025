@@ -1,37 +1,77 @@
 .sidebar-thumb-img {
-        height: 150px; 
-        width: 100%;
-        object-fit: cover; 
-        object-position: center top; 
-        background-color: #f8f9fa;
-        border-radius: 0.25rem;
-        transition: transform 0.3s ease;
-    }
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease;
+}
 
-    .sidebar-thumb-img:hover {
-        transform: scale(1.05);
-    }
+.sidebar-thumb-img:hover {
+    transform: scale(1.05);
+}
 
+.sidebar-sticky {
+    position: sticky;
+    top: 20px;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.sidebar-sticky .card {
+    margin-bottom: 3rem;
+}
+
+.sidebar-sticky .card-body {
+    background-color: #f5f5f5;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-close {
+    position: absolute;
+    top: -33px;       
+    right: 0;         
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 0;
+    z-index: 1100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#modalImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 991.98px) {
     .sidebar-sticky {
-        position: sticky;
-        top: 20px;
-        max-height: 720px; 
-        overflow-y: auto;
-        padding-right: 0.5rem;
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
+        margin-top: 2rem;
     }
 
-    @media (max-width: 991.98px) {
-        .sidebar-sticky {
-            position: static; 
-            max-height: none;
-            overflow-y: visible;
-            padding-right: 0;
-            margin-top: 2rem;
-        }
-
-        .sidebar-thumb-img {
-            height: 100px; 
-            object-fit: cover; 
-            object-position: center top; 
-        }
+    .sidebar-thumb-img {
+        height: 100px;
+        object-fit: cover;
+        object-position: center top;
     }
+}
+
+@media (max-width: 767.98px) {
+    .btn-close {
+        top: -33px;
+        right: 0;
+    }
+}

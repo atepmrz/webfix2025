@@ -29,7 +29,7 @@
                     <p>
                         📅 <strong>Sabtu, 9 Agustus 2025</strong><br>
                         ⏰ <strong>09.00 - 13.00 WIB</strong><br>
-                        📍 <strong>Entrance Borma Gempol</strong>
+                        📍 <strong>Entrance Gempol</strong>
                     </p>
 
                     <p class="fs-5 fw-bold text-success">
@@ -53,7 +53,7 @@
                 <div class="sidebar-sticky">
                     <h5 class="mb-3">Event & News Lainnya</h5>
 
-                    <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm">
                         <a href="{{ route('event.mewarnai') }}" class="text-decoration-none">
                             <img src="{{ asset('img/event&news/bck1.jpg') }}" alt="Lomba Mewarnai"
                                 class="sidebar-thumb-img">
@@ -64,7 +64,7 @@
                         </a>
                     </div>
 
-                    <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm">
                         <a href="{{ route('event.pbb') }}" class="text-decoration-none">
                             <img src="{{ asset('img/event&news/pbb1.jpg') }}" alt="Pelatihan PBB" class="sidebar-thumb-img">
                             <div class="card-body p-2">
@@ -74,7 +74,7 @@
                         </a>
                     </div>
 
-                    <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm">
                         <a href="{{ route('event.resep') }}" class="text-decoration-none">
                             <img src="{{ asset('img/event&news/resep/churros.jpg') }}" alt="Kegiatan Resep"
                                 class="sidebar-thumb-img">
@@ -85,7 +85,7 @@
                         </a>
                     </div>
 
-                    <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm">
                         <a href="{{ route('event.icecream') }}" class="text-decoration-none">
                             <img src="{{ asset('img/event&news/icecream/3.jpg') }}" alt="Ice Cream"
                                 class="sidebar-thumb-img">
@@ -96,7 +96,7 @@
                         </a>
                     </div>
 
-                    <div class="card mb-3 border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm">
                         <a href="{{ route('event.sasha') }}" class="text-decoration-none">
                             <img src="{{ asset('img/event&news/sasha/1.jpg') }}" alt="Sasha Hair Color"
                                 class="sidebar-thumb-img">
@@ -111,18 +111,16 @@
         </div>
     </div>
 
-    <!-- Zoom Gambar -->
+    <!-- Modal Zoom Gambar -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content bg-transparent border-0">
-                <div class="modal-body p-0 position-relative">
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                        data-bs-dismiss="modal" aria-label="Close"></button>
-                    <img id="modalImage" src="" alt="" class="img-fluid rounded"
-                        style="width: 100%; max-height: 80vh; object-fit: contain;">
-                </div>
-            </div>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-0 border-0 position-relative">
+            <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img id="modalImage" src="" alt="" class="img-fluid d-block mx-auto" />
         </div>
     </div>
+</div>
+
+
     <script src="{{ asset('js/main/event/donor.js') }}"></script>
 @endsection

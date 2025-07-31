@@ -72,7 +72,7 @@ body.store-modal-open {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     max-height: 95vh;
     min-height: 650px;
-    overflow: visible;
+    overflow-y: auto;
 }
 
 .close-modal {
@@ -83,6 +83,7 @@ body.store-modal-open {
     cursor: pointer;
     color: #666;
     transition: color 0.3s ease;
+    z-index: 10;
 }
 
 .close-modal:hover {
@@ -241,19 +242,26 @@ h1.display-5 {
 }
 
 @media (max-width: 768px) {
+    .store-modal {
+        padding: 10px;
+    }
     .store-content {
         max-width: 95%;
         padding: 20px;
-        max-height: 85vh;
+        max-height: 90vh;
+        min-height: auto;
+        overflow-y: auto;
     }
 
     .store-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .store-card {
-        height: 140px;
+        height: 130px;
         width: 130px;
         padding: 10px;
     }
@@ -264,22 +272,31 @@ h1.display-5 {
     }
 
     .store-name {
-        font-size: 11px;
+        font-size: 12px;
+        margin-top: 8px;
     }
 }
 
 @media (max-width: 480px) {
+    .store-modal {
+        padding: 5px; 
+    }
+    
     .store-content {
         padding: 15px;
-        max-height: 80vh;
+        max-height: 95vh; 
+        min-height: auto; 
+        border-radius: 15px; 
     }
 
     .store-grid {
         gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .store-card {
-        height: 120px;
+        height: 110px; 
         width: 110px;
         padding: 8px;
     }
@@ -290,6 +307,12 @@ h1.display-5 {
     }
 
     .store-name {
-        font-size: 10px;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    
+    .store-content h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 }

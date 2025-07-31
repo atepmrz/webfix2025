@@ -229,7 +229,23 @@
         </div>
     </div>
 
-
+    <!-- Gambar Daftar Pemenang -->
+    <div class="row">
+        <h2 class="text-center mb-4">✨ PRAMA BORMA BERHADIAH 2025 - DAFTAR PEMENANG ✨</h2>
+        <div class="col-md-4 mb-4">
+            <img src="{{ asset('img/event&news/pbb/pemenang1.jpeg') }}" alt="Daftar Pemenang 1" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/pemenang1.jpeg') }}', 'Daftar Pemenang 1')">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{{ asset('img/event&news/pbb/pemenang2.jpeg') }}" alt="Daftar Pemenang 2" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/pemenang2.jpeg') }}', 'Daftar Pemenang 2')">
+        </div>
+        <div class="col-md-4 mb-4">
+            <img src="{{ asset('img/event&news/pbb/pemenang3.jpeg') }}" alt="Daftar Pemenang 3" class="additional-image"
+                onclick="openModal('{{ asset('img/event&news/pbb/pemenang3.jpeg') }}', 'Daftar Pemenang 3')">
+        </div>
+    </div>
+    
     <!-- Modal Zoom Gambar -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">

@@ -1,8 +1,24 @@
+@php
+            $bulan = [
+                '01' => 'Januari',
+                '02' => 'Februari',
+                '03' => 'Maret',
+                '04' => 'April',
+                '05' => 'Mei',
+                '06' => 'Juni',
+                '07' => 'Juli',
+                '08' => 'Agustus',
+                '09' => 'September',
+                '10' => 'Oktober',
+                '11' => 'November',
+                '12' => 'Desember',
+            ][date('m')];
+        @endphp
 <link rel="stylesheet" href="{{ asset('css/main/partial/partPromosi.css') }}">
 
 <div class="container-fluid pt-0 my-3 px-0">
     <div class="text-center mx-auto mt-2" style="max-width: 600px;">
-        <h1 class="display-5 mb-4">Promosi <span class="text-primary">{{ date('F') }}</span></h1>
+        <h1>Promosi <span class="text-primary">{{ $bulan }}</span></h1>
     </div>
     <div class="owl-carousel project-carousel">
         @foreach ($promoFinal as $promo)

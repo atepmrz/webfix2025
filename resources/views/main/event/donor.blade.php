@@ -29,7 +29,7 @@
                     <p>
                         📅 <strong>Sabtu, 9 Agustus 2025</strong><br>
                         ⏰ <strong>09.00 - 13.00 WIB</strong><br>
-                        📍 <strong>Entrance Gempol</strong>
+                        📍 <strong>Entrance Borma Gempol</strong>
                     </p>
 
                     <p class="fs-5 fw-bold text-success">

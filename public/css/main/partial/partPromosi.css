@@ -2,6 +2,10 @@
     border-radius: 10px;
 }
 
+.img-fluid.rounded2 {
+    margin-top: 25px; 
+}
+
 .promo-modal-overlay {
     position: fixed;
     top: 0;

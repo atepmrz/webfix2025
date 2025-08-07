@@ -152,98 +152,99 @@ class PromoController extends Controller
     {
         $promoList = collect([
             [
-                'nama' => 'Roti Tawar Lembut Premium',
-                'file' => 'promojuly1',
-                'harga' => 10000,
+                'nama' => 'BREXCELLE',
+                'file' => 'brexcelle',
+                'harga' => 17500,
                 'produk' => [
-                    ['nama' => 'Roti Tawar Lembut Premium', 'harga' => 10000, 'satuan' => 'pcs']
+                    ['nama' => 'Rujak Cireng Rasa Original', 'harga' => 17500, 'satuan' => 'pcs']
                 ]
             ],
             [
-                'nama' => 'Kanzler Cheese Frank 360gr, Beef Wiener 360gr, Cheese Bratwurst 360gr',
-                'file' => 'promojuly2',
-                'harga' => 48900,
+                'nama' => 'KANZLER',
+                'file' => 'kanzler',
+                'harga' => 135000,
                 'produk' => [
-                    ['nama' => 'Kanzler Cheese Frank 360gr', 'harga' => 48900, 'satuan' => 'pcs'],
-                    ['nama' => 'Kanzler Beef Wiener 360gr', 'harga' => 48900, 'satuan' => 'pcs'],
-                    ['nama' => 'Kanzler Cheese Bratwurst 360gr', 'harga' => 48900, 'satuan' => 'pcs']
+                    ['nama' => 'Kanzler Cocktail 500gr', 'harga' => 45000, 'satuan' => 'pcs'],
+                    ['nama' => 'Kanzler Chicken Nugget 450gr', 'harga' => 45000, 'satuan' => 'pcs'],
+                    ['nama' => 'Kanzler Crispy Chicken Nugget', 'harga' => 45000, 'satuan' => 'pcs']
                 ]
             ],
             [
-                'nama' => 'Happy Egg omega 10s, Happy Egg Daily Fresh 10s',
-                'file' => 'promojuly3',
-                'harga' => 52750,
+                'nama' => 'PERFECTIO',
+                'file' => 'perfectio',
+                'harga' => 33000,
                 'produk' => [
-                    ['nama' => 'Happy Egg Omega 10s', 'harga' => 28250, 'satuan' => 'pcs'],
-                    ['nama' => 'Happy Egg Daily Fresh 10s', 'harga' => 24500, 'satuan' => 'pcs']
+                    ['nama' => 'Chicken Skin 300gr', 'harga' => 33000, 'satuan' => 'pcs'],
                 ]
             ],
             [
-                'nama' => 'Whiskas, Gaer Projektor, Glass, Dragon',
-                'file' => 'promojuly4',
-                'harga' => 113550,
+                'nama' => 'YOSEO CREAMIX',
+                'file' => 'yoseo',
+                'harga' => 55400,
                 'produk' => [
-                    ['nama' => 'Whiskas', 'harga' => 6000, 'satuan' => 'pcs'],
-                    ['nama' => 'Gaer Projektor', 'harga' => 58950, 'satuan' => 'pcs'],
-                    ['nama' => 'Glass', 'harga' => 37350, 'satuan' => 'pcs'],
-                    ['nama' => 'Dragon', 'harga' => 11250, 'satuan' => 'pcs']
+                    ['nama' => 'Choco Granola', 'harga' => 9250, 'satuan' => 'pcs'],
+                    ['nama' => 'Honey Granola', 'harga' => 9250, 'satuan' => 'pcs'],
+                    ['nama' => 'Cookies&Cream 90ml', 'harga' => 9250, 'satuan' => 'pcs'],
+                    ['nama' => 'Caramel Tpg Nut Crunch', 'harga' => 9250, 'satuan' => 'pcs'],
+                    ['nama' => 'Bluberry Chs Cake', 'harga' => 9200, 'satuan' => 'pcs'],
+                    ['nama' => 'Stawberry Chs Cake', 'harga' => 9200, 'satuan' => 'pcs']
                 ]
             ],
-            [
-                'nama' => 'Harvo Apel Fuji Premium Besar, Wortel Brastagi, Enoki Mushroom 100g, Ayam Dada Fillet, Beef Rendang',
-                'file' => 'promojuly5',
-                'harga' => 26740,
-                'produk' => [
-                    ['nama' => 'Harvo Apel Fuji Premium Besar', 'harga' => 5900, 'satuan' => '100g'],
-                    ['nama' => 'Wortel Brastagi', 'harga' => 1590, 'satuan' => '100g'],
-                    ['nama' => 'Enoki Mushroom 100g', 'harga' => 2500, 'satuan' => 'pack'],
-                    ['nama' => 'Ayam Dada Fillet', 'harga' => 5250, 'satuan' => '100gr'],
-                    ['nama' => 'Beef Rendang', 'harga' => 11500, 'satuan' => '100gr']
-                ]
-            ],
-            [
-                'nama' => 'Sahabat Alam Telur Kampung 6s & 10s',
-                'file' => 'promojuly6',
-                'harga' => 63360,
-                'diskon' => true, 
-                'diskon_persen' => 10, 
-                'produk' => [
-                    ['nama' => 'Sahabat Alam Telur Kampung 6s', 'harga' => 25250, 'satuan' => 'pack', 'diskon' => true, 'diskon_persen' => 10],
-                    ['nama' => 'Sahabat Alam Telur Kampung 10s', 'harga' => 38550, 'satuan' => 'pack', 'diskon' => true, 'diskon_persen' => 10]
-                ]
-            ],
-            [
-                'nama' => 'Mainan Lego, Ayam Mainan, M-tech, Kit',
-                'file' => 'promojuly7',
-                'harga' => 67350,
-                'produk' => [
-                    ['nama' => 'Mainan Lego', 'harga' => 8500, 'satuan' => 'pcs'],
-                    ['nama' => 'Ayam Mainan', 'harga' => 10710, 'satuan' => 'pcs'],
-                    ['nama' => 'M-tech', 'harga' => 37900, 'satuan' => 'pcs'],
-                    ['nama' => 'Kit', 'harga' => 10240, 'satuan' => 'pcs']
-                ]
-            ],
-            [
-                'nama' => 'Kanzler Singles Bakso Keju, Kanzler Singles Bakso Original, Kanzler Singles Bakso Hot, Kanzler Singles Bakso Gochujang, Fiesta Crispy Bubble 400g, Fiesta Stikie 400g',
-                'file' => 'promojuly8',
-                'harga' => 116000,
-                'produk' => [
-                    ['nama' => 'Kanzler Singles Bakso Keju', 'harga' => 6900, 'satuan' => 'pcs'],
-                    ['nama' => 'Kanzler Singles Bakso Original', 'harga' => 6900, 'satuan' => 'pcs'],
-                    ['nama' => 'Kanzler Singles Bakso Hot', 'harga' => 6900, 'satuan' => 'pcs'],
-                    ['nama' => 'Kanzler Singles Bakso Gochujang', 'harga' => 6900, 'satuan' => 'pcs'],
-                    ['nama' => 'Fiesta Crispy Bubble 400g', 'harga' => 41500, 'satuan' => 'pcs'],
-                    ['nama' => 'Fiesta Stikie 400g', 'harga' => 46900, 'satuan' => 'pcs']
-                ]
-            ],
-            [
-                'nama' => 'Semangka Merah',
-                'file' => 'promojuly9',
-                'harga' => 990,
-                'produk' => [
-                    ['nama' => 'Semangka Merah', 'harga' => 990, 'satuan' => '100g']
-                ]
-            ],
+            // [
+            //     'nama' => 'Harvo Apel Fuji Premium Besar, Wortel Brastagi, Enoki Mushroom 100g, Ayam Dada Fillet, Beef Rendang',
+            //     'file' => 'promojuly5',
+            //     'harga' => 26740,
+            //     'produk' => [
+            //         ['nama' => 'Harvo Apel Fuji Premium Besar', 'harga' => 5900, 'satuan' => '100g'],
+            //         ['nama' => 'Wortel Brastagi', 'harga' => 1590, 'satuan' => '100g'],
+            //         ['nama' => 'Enoki Mushroom 100g', 'harga' => 2500, 'satuan' => 'pack'],
+            //         ['nama' => 'Ayam Dada Fillet', 'harga' => 5250, 'satuan' => '100gr'],
+            //         ['nama' => 'Beef Rendang', 'harga' => 11500, 'satuan' => '100gr']
+            //     ]
+            // ],
+            // [
+            //     'nama' => 'Sahabat Alam Telur Kampung 6s & 10s',
+            //     'file' => 'promojuly6',
+            //     'harga' => 63360,
+            //     'diskon' => true, 
+            //     'diskon_persen' => 10, 
+            //     'produk' => [
+            //         ['nama' => 'Sahabat Alam Telur Kampung 6s', 'harga' => 25250, 'satuan' => 'pack', 'diskon' => true, 'diskon_persen' => 10],
+            //         ['nama' => 'Sahabat Alam Telur Kampung 10s', 'harga' => 38550, 'satuan' => 'pack', 'diskon' => true, 'diskon_persen' => 10]
+            //     ]
+            // ],
+            // [
+            //     'nama' => 'Mainan Lego, Ayam Mainan, M-tech, Kit',
+            //     'file' => 'promojuly7',
+            //     'harga' => 67350,
+            //     'produk' => [
+            //         ['nama' => 'Mainan Lego', 'harga' => 8500, 'satuan' => 'pcs'],
+            //         ['nama' => 'Ayam Mainan', 'harga' => 10710, 'satuan' => 'pcs'],
+            //         ['nama' => 'M-tech', 'harga' => 37900, 'satuan' => 'pcs'],
+            //         ['nama' => 'Kit', 'harga' => 10240, 'satuan' => 'pcs']
+            //     ]
+            // ],
+            // [
+            //     'nama' => 'Kanzler Singles Bakso Keju, Kanzler Singles Bakso Original, Kanzler Singles Bakso Hot, Kanzler Singles Bakso Gochujang, Fiesta Crispy Bubble 400g, Fiesta Stikie 400g',
+            //     'file' => 'promojuly8',
+            //     'harga' => 116000,
+            //     'produk' => [
+            //         ['nama' => 'Kanzler Singles Bakso Keju', 'harga' => 6900, 'satuan' => 'pcs'],
+            //         ['nama' => 'Kanzler Singles Bakso Original', 'harga' => 6900, 'satuan' => 'pcs'],
+            //         ['nama' => 'Kanzler Singles Bakso Hot', 'harga' => 6900, 'satuan' => 'pcs'],
+            //         ['nama' => 'Kanzler Singles Bakso Gochujang', 'harga' => 6900, 'satuan' => 'pcs'],
+            //         ['nama' => 'Fiesta Crispy Bubble 400g', 'harga' => 41500, 'satuan' => 'pcs'],
+            //         ['nama' => 'Fiesta Stikie 400g', 'harga' => 46900, 'satuan' => 'pcs']
+            //     ]
+            // ],
+            // [
+            //     'nama' => 'Semangka Merah',
+            //     'file' => 'promojuly9',
+            //     'harga' => 990,
+            //     'produk' => [
+            //         ['nama' => 'Semangka Merah', 'harga' => 990, 'satuan' => '100g']
+            //     ]
+            // ],
         ]);
 
        $promoFinal = $promoList

@@ -99,6 +99,8 @@ Route::get('/event/sasha', [EventController::class, 'sasha'])->name('event.sasha
 // Route::get('/event/saporo', [EventController::class, 'saporo'])->name('event.saporo');
 //ini route News//
 Route::get('/news/donor', [NewsController::class, 'donor'])->name('news.donor');
+Route::get('/news/promo', [NewsController::class, 'promo'])->name('news.promo');
+
 
 // sementara yang sebelumnya di off //
 // Route::get('/event', function () {

@@ -5,22 +5,6 @@
             <div class="row gy-5 gx-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
-                        <img class="img-fluid" src="{{ asset('img/seasonal/1.jpg') }}" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="{{ asset('img/seasonal/1.jpg') }}" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Lomba Mewarnai</h3>
-                                <hr class="w-25">
-                            </div>
-                        </div>
-                        <a class="btn btn-light" href="{{ url('/event/mewarnai') }}">Mewarnai</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
                         <img class="img-fluid" src="{{ asset('img/seasonal/2.jpg') }}" alt="">
                         <div class="service-img">
                             <img class="img-fluid" src="{{ asset('img/seasonal/2.jpg') }}" alt="">
@@ -33,6 +17,22 @@
                             </div>
                         </div>
                         <a class="btn btn-light" href="{{ url('/promo-carnival') }}">Carnival</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ asset('img/promo/borma/1.jpg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ asset('img/promo/borma/1.jpg') }}" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Promo Agustus</h3>
+                                <hr class="w-25">
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="{{ url('/news/promo') }}">Agustus</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">

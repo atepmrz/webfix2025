@@ -1,0 +1,32 @@
+.pagination button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .pagination button:hover {
+            background: #0056b3;
+        }
+        
+        .pagination button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .pagination button.active {
+            background: #ff5e00;
+        }
+        
+        .pagination {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+            transition: 0.3s;
+        }

@@ -190,18 +190,24 @@ class PromoController extends Controller
                     ['nama' => 'Stawberry Chs Cake', 'harga' => 9200, 'satuan' => 'pcs']
                 ]
             ],
-            // [
-            //     'nama' => 'Harvo Apel Fuji Premium Besar, Wortel Brastagi, Enoki Mushroom 100g, Ayam Dada Fillet, Beef Rendang',
-            //     'file' => 'promojuly5',
-            //     'harga' => 26740,
-            //     'produk' => [
-            //         ['nama' => 'Harvo Apel Fuji Premium Besar', 'harga' => 5900, 'satuan' => '100g'],
-            //         ['nama' => 'Wortel Brastagi', 'harga' => 1590, 'satuan' => '100g'],
-            //         ['nama' => 'Enoki Mushroom 100g', 'harga' => 2500, 'satuan' => 'pack'],
-            //         ['nama' => 'Ayam Dada Fillet', 'harga' => 5250, 'satuan' => '100gr'],
-            //         ['nama' => 'Beef Rendang', 'harga' => 11500, 'satuan' => '100gr']
-            //     ]
-            // ],
+            [
+                'nama' => 'Harga Special',
+                'file' => 'special1',
+                'harga' => 24000,
+                'produk' => [
+                    ['nama' => 'Coca-cola', 'harga' => 8000, 'satuan' => 'pcs'],
+                    ['nama' => 'Fanta', 'harga' => 8000, 'satuan' => 'pcs'],
+                    ['nama' => 'Sprite 1L', 'harga' => 8000, 'satuan' => 'pcs']
+                ]
+            ],
+            [
+                'nama' => 'Harga Special',
+                'file' => 'special2',
+                'harga' => 8800,
+                'produk' => [
+                    ['nama' => 'Chiki Twist Rasa Jagung Bakar', 'harga' => 8800, 'satuan' => 'pcs']
+                ]
+            ],
             // [
             //     'nama' => 'Sahabat Alam Telur Kampung 6s & 10s',
             //     'file' => 'promojuly6',
@@ -211,17 +217,6 @@ class PromoController extends Controller
             //     'produk' => [
             //         ['nama' => 'Sahabat Alam Telur Kampung 6s', 'harga' => 25250, 'satuan' => 'pack', 'diskon' => true, 'diskon_persen' => 10],
             //         ['nama' => 'Sahabat Alam Telur Kampung 10s', 'harga' => 38550, 'satuan' => 'pack', 'diskon' => true, 'diskon_persen' => 10]
-            //     ]
-            // ],
-            // [
-            //     'nama' => 'Mainan Lego, Ayam Mainan, M-tech, Kit',
-            //     'file' => 'promojuly7',
-            //     'harga' => 67350,
-            //     'produk' => [
-            //         ['nama' => 'Mainan Lego', 'harga' => 8500, 'satuan' => 'pcs'],
-            //         ['nama' => 'Ayam Mainan', 'harga' => 10710, 'satuan' => 'pcs'],
-            //         ['nama' => 'M-tech', 'harga' => 37900, 'satuan' => 'pcs'],
-            //         ['nama' => 'Kit', 'harga' => 10240, 'satuan' => 'pcs']
             //     ]
             // ],
             // [

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/main/event/event.css') }}" />
 
     <div class="container">
-        <h1 class="text-center my-5">Event & Berita Terbaru</h1>
+        <h1 class="text-center my-5">Event & Berita Terbaru Prama Borma</h1>
 
         <div class="row">
             <!-- HALAMAN 1 - 6 items -->
@@ -61,7 +61,7 @@
                     </a>
                     <div class="card-body">
                         <span class="badge bg-primary mb-2">Event</span>
-                        <h5 class="card-title"><a href="{{ route('event.pbb') }}">🎁 PBB - Berhadiah</a></h5>
+                        <h5 class="card-title"><a href="{{ route('event.pbb') }}">🎁 PBB - Prama Borma Berhadiah</a></h5>
                         <p class="card-text">Belanja berhadiah Umroh? Yuk ikutan! 😍🎉</p>
                         <p class="text-muted">30/06/2025</p>
                     </div>
